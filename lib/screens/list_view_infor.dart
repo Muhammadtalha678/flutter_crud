@@ -33,7 +33,7 @@ class _ListViewInformationState extends State<ListViewInformation> {
       List datalist = [];
       // Map<String, dynamic> data = snapshot.data!.data() as Map<String, dynamic>;
       snapshot.data!.docs.map((DocumentSnapshot document) => {
-           datalist.add(document.data() as Map<String ,dynamic>),
+           datalist.add(document.data()) as Map<String ,dynamic>,
 
       }).toList();
       if (datalist.isEmpty) {
